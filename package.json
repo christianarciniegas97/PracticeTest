@@ -1,0 +1,39 @@
+{
+  "name": "practicetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "api": "jest",
+    "open-report-jest": "start reports/test-report.html",
+    "ui-chrome": "npx playwright test --ui",
+    "db": "npx playwright test db/",
+    "show-report": "npx playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianarciniegas97/PracticeTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christianarciniegas97/PracticeTest/issues"
+  },
+  "homepage": "https://github.com/christianarciniegas97/PracticeTest#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.5.2",
+    "@types/supertest": "^6.0.3",
+    "jest": "^30.2.0",
+    "jest-html-reporter": "^4.3.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.4",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "mysql2": "^3.15.3"
+  }
+}
