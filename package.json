@@ -7,7 +7,7 @@
   "scripts": {
     "api": "jest",
     "open-report-jest": "start reports/test-report.html",
-    "ui-chrome": "npx playwright test --ui",
+    "ui": "npx playwright test --ui",
     "db": "npx playwright test db/",
     "show-report": "npx playwright show-report"
   },
