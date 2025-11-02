@@ -8,3 +8,4 @@ node_modules/
 /playwright/.auth/
 /test-report.html/
 /test/utils/db.ts
+/test/data/data.ts
