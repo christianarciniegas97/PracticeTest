@@ -7,4 +7,4 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 /test-report.html/
-dt.ts
+/test/utils/dt.ts

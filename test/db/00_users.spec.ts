@@ -1,5 +1,5 @@
 import { expect, test } from "../base";
-import { db } from "../utils/dt";
+import { db } from "../utils/db";
 
 test('Validate all users in db', async () =>{
 
