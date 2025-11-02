@@ -1,7 +1,5 @@
 import * as request from "supertest"
-
-
-const base_url =  "https://practice.expandtesting.com/notes/api/users"
+import { url } from "../data/data";
 
 export class Auth {
   private email: string;
@@ -13,7 +11,7 @@ export class Auth {
   }
 
   async login(): Promise<string> {
-    const res = await request(base_url)
+    const res = await request(url.user)
       .post("/login") 
       .type("form")
       .send({ email: this.email, password: this.password });

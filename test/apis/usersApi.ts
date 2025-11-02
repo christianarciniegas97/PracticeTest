@@ -1,8 +1,8 @@
 import * as  request from "supertest";
 import { Auth } from "./auth";
 import { users } from "../data/data";
+import { url } from "../data/data";
 
-const base_url =  "https://practice.expandtesting.com/notes/api/users"
 
 export class UsersApi {
 
@@ -13,7 +13,7 @@ export class UsersApi {
     }
 
     async postCreateUsers (){
-      return await request(base_url)
+      return await request(url.user)
         .post("/register")
         .accept("application/json")
         .type("form")
@@ -25,7 +25,7 @@ export class UsersApi {
     };
 
     async postLogin(){
-        return await request(base_url)
+        return await request(url.user)
         .post("/login")
         .accept("application/json")
         .type("form")
@@ -37,7 +37,7 @@ export class UsersApi {
     
     async getProfile(){
         const token = await UsersApi.getToken()
-        return await request(base_url)
+        return await request(url.user)
         .get("/profile")
         .set("accept", "application/json")
         .set("x-auth-token", token); 
@@ -45,7 +45,7 @@ export class UsersApi {
 
     async pathProfile(){
         const token = await UsersApi.getToken()
-        return await request(base_url)
+        return await request(url.user)
         .patch("/profile")
         .set("accept", "application/json")
         .set("x-auth-token", token)

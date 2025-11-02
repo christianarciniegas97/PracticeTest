@@ -1,5 +1,5 @@
 import { expect, Locator, Page } from "@playwright/test";
-import { urls } from "../data/data";
+import { url } from "../data/data";
 
 
 export class RegisterPage{
@@ -17,7 +17,7 @@ export class RegisterPage{
     }
 
     async goToRegisterPage(){
-        await this.page.goto(urls.url.front + 'register', {waitUntil:"domcontentloaded"})
+        await this.page.goto(url.register, {waitUntil:"domcontentloaded"})
     }
 
     async ramdonUser (){

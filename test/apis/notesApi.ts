@@ -1,5 +1,5 @@
 import * as  request from "supertest";
-import { urls } from "../data/data";
+import { url } from "../data/data";
 import { UsersApi } from "./usersApi";
 
 
@@ -8,7 +8,7 @@ export class NotesApi {
     async postCreateNewNote(){
         const token = await UsersApi.getToken()
 
-        return request(urls.url.base)
+        return request(url.notes)
         .post("/notes")
         .set("accept", "application/json")
         .set("x-auth-token", token )

@@ -1,5 +1,5 @@
 import { expect, Locator, Page } from "@playwright/test";
-import { urls } from "../data/data";
+import { url } from "../data/data";
 
 export class LoginPage {
      page :  Page
@@ -22,7 +22,7 @@ export class LoginPage {
     }
 
     async goToLogin(){
-        await this.page.goto(urls.url.front + 'login', {waitUntil:"domcontentloaded"})
+        await this.page.goto(url.login, {waitUntil:"domcontentloaded"})
     }
 
     async completeDataLogin(user:string,pass:string){
