@@ -1,20 +1,19 @@
-#Inside that directory, you can run several commands:
+# Commands:
 
-  npx playwright test
-    Runs the end-to-end tests.
+# RUN API TEST
+    npm run api
 
-  npx playwright test --ui
-    Starts the interactive UI mode.
+# OPEN REPORT API
+    npm run open-report-jest
 
-  npx playwright test --project=chromium
-    Runs the tests only on Desktop Chrome.
+# RUN UI TEST
+    npm run ui
 
-  npx playwright test example
-    Runs the tests in a specific file.
+# OPEN REPORT UI TEST
+    npm run show-report
 
-  npx playwright test --debug
-    Runs the tests in debug mode.
+# RUN DB TEST
+    npm run db
 
-  npx playwright codegen
-    Auto generate tests with Codegen.
+
 
