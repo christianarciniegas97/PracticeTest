@@ -1,4 +1,4 @@
-import { NotesApi } from "../apis/notesApi"
+import { NotesApi } from "../../apis/notesApi"
 
 describe("Notes module", () =>{
     const notesApi = new NotesApi()

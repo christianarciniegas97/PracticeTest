@@ -1,6 +1,6 @@
 import { test as base } from '@playwright/test'
-import { LoginPage } from './pages/loginPage.ts'
-import { RegisterPage } from './pages/registerPage.ts'
+import { LoginPage } from '../pages/loginPage.ts'
+import { RegisterPage } from '../pages/registerPage.ts'
 
 type Fixtures = {
   loginPage: LoginPage,

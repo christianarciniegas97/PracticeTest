@@ -22,3 +22,13 @@ export const url = {
     register : `${BASE}register`
 
 }
+
+export const dataDB = {
+
+  host : "localhost",
+  user: "root",
+  password: "root",
+  database: "tienda"
+
+
+}

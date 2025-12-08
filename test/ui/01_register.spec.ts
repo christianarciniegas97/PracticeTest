@@ -1,5 +1,5 @@
-import { test } from "../base";
-import { users } from "../data/data";
+import { test } from "../../fixture/base";
+import { users } from "../../data/data";
 
 test.beforeEach( async ({registerPage}) => {
     await registerPage.goToRegisterPage()

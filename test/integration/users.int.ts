@@ -1,4 +1,4 @@
-import { UsersApi } from "../apis/usersApi";
+import { UsersApi } from "../../apis/usersApi";
 
 describe("users apis test", () =>{
 
